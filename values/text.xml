@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string
+    name="faq"
+    >
+
+<b><u><big>FAQ</big></u></b>
+
+\n\n
+\n\n<b>ALS TEXTDATEI (.TXT) SPEICHERN (Behörde)?</b>
+\n\nSiehe unter  <i>KONTAKTINFORMATIONEN BEHÖRDE?</i>.
+\n\n<b>ALS TEXTDATEI (.TXT) SPEICHERN (Gastronom)?</b>
+\n\nWenn Sie wollen, können Sie die Kontaktinformationen in eine Textdatei (.txt) sichern. Tippen Sie auf die graue Schrift „KONTAKTINFORMATIONEN“ oben links. Tippen Sie auf den Button KONTAKTINFORMATIONEN GASTRONOM. Tippen Sie auf ALS TEXTDATEIN (.TXT) SPEICHERN.
+\n\nEs wird kurz die Nachricht eingeblendet „X Kontaktinformationen gespeichert!“ Zudem erscheint unter dem Button der Speicherort, an dem Sie die Textdatei finden können. Dort finden Sie auch den Namen der Datei. Er lautet: kontaktinformationen_gastronom.txt
+\n\nTIPP: Sie haben zwei Möglichkeiten zu diesem Speicherort zu kommen.
+\n\nMöglichkeit 1: Auf fast allen Android-Geräten finden Sie vorinstalliert eine Dateimanager-App (bei Samsung heißt diese z.B. Eigene Dateien). Das ist das Pendant zum Explorer, den Sie von vielen Windows-Rechnern her kennen. Haben Sie noch keinen Explorer auf Ihren Gerät, können Sie einen aus dem Playstore herunterladen. Öffnen Sie die Dateimanager-App. Tippen Sie auf Interner Speicher => Android => data => com.wirtshauskartn.wirtshauskartnyellow => files => wirtshauskartn. Fast alle Dateimanager bieten die Möglichkeit, die Dateien zu verschieben, z.B. auf einer externen SD-Card zu speichern. Sie bieten in der Regel auch die Möglichkeit, die Dateien zu teilen, z.B. zu mailen. Das sollten Sie aber nicht tun, weil Sie so personenbezogene Daten teilen würden.
+\n\n2. Möglichkeit: Verbinden Sie Ihr Handy mit einem PC über das mit Ihrem Handy mitgelieferte Kabel.  Entsichern Sie Ihr Handy. Öffnen Sie den Windows-Explorer. Klicken Sie auf <i>Dieser PC</i>, dann auf den Namen Ihres Handys, dann auf Phone, dann auf  auf Android, dann auf data, dann auf com.wirtshauskartn.wirtshauskartnyellow, dann auf files, dann auf wirtshauskartn. Sie können jetzt mit der Datei kontaktinformationen_gastronom.txt alles machen, was man mit normalen Textdateien auch machen kann, also z.B. per drag and drop die Datei auf den PC oder einen USB-Stick kopieren, in einem Tabellen- oder Textverarbeitungsprogramm öffnen oder als Datensätze in eine Datenbank importieren.
+\n\nTipp: Benötigen Sie die Daten in einer CSV-Datei, gehen Sie wie folgt vor: Öffnen Sie die Datei, z.B. mit dem Windows-Programm Editor. Wählen Sie <i>speichern unter </i>und speichern die Datei unter dem Namen <i>kontaktinformationen_gastronom.csv</i>. Sie können diese Datei jetzt als CSV-Datei benutzen.
+\n\nAchtung: Die Datei verfügt nicht über eine automatische Löschfunktion. Sie müssen die Datensätze, die Sie in eine Texdt-Datei gespeichert haben und die älter als 30 Tage sind, in der Datei händisch löschen!
+\n\n<b>Behörde?</b>
+\n\nSiehe unter <i>Passwort und Login Behörde</i> und <i>Kontaktinformationen</i> Behörde.\n\n<b>Backup?</b>
+\n\nSiehe zunächst unter <i>Datensicherheit</i>. Siehe dann unter <i>ALS TEXTDATEI (.TXT) SPEICHERN> (Gastronom)</i>.
+\n\n<b>Cloud?</b>\n\nNein. Die Kontaktdaten werden von der App nur im Handy gespeichert, auf dem die Kartnscanner-App läuft. Siehe dazu auch <i>Datensicherheit (technische)</i>.
+\n\n<b>Datenschutz?</b>
+\n\nDie Kontaktinformationen auf der Wirtskaus-Kartn sind verschlüsselt. Die Kontaktinformationen werden ausschließlich verschlüsselt gespeichert. Zusätzlich werden gespeichert: Datum, Komm-Zeit, Geh-Zeit, Tischnummer. Diese Angaben werden unverschlüsselt gespeichert. Zur Kontrolle der Datensätze werden a) die Kontaktdaten unmittelbar nach dem Scannen entschlüsselt und für wenige Sekunden angezeigt, damit der Gastronom eine Plausibilätskontrolle der Kontaktinformationen durchführen kann, und b) die Vornamen bei der Anzeige der Daten entschlüsselt und im Klartext dargestellt. Familiennamen und Nummern oder E-Mail-Adressen bleiben verschlüsselt. Vollständige Entschlüsselung der Daten und Anzeige aller Kontaktinformationen im Klartext nur bei Behörden-Login. Die App speichert die Daten ausschließlich lokal im Handy. Die App verfügt über keine Funktionalität, um Daten automatisiert zu übertragen. Die App verfügt über keine Funktionalität, um Daten ins Internet zu übertragen. Die App verfügt über keine Funktionalität, die einen Zugriff auf die Daten über das Internet ermöglicht. Ein Remote-Zugriff ist nicht vorgesehen.
+\n\nSiehe auch unter <i>Datensicherheit (technisch)</i>. Siehe auch unter <i> KONTAKTINFORMATIONEN BEHÖRDE</i>. Siehe auch unter <i> KONTAKTINFORMATIONEN GASTRONOM</i>. Siehe auch unter <i> Datenschutzerklärung</i>\n\n<b>Datenschutzerklärung?</b>\n\n
+Unter https://kartnbastler.de/datenschutzvorgenerator.htm können mit der Eingabe weniger Informationen DS-GVO-konforme Datenschutzerklärungen erstellt werden.\n\n<b>FAQ?</b>
+\n\nTippen Sie auf FAQ und öffnen Sie diese FAQ.\n\n<b>Datensicherheit (technische)?</b>
+\n\nDie Kontaktinformationen werden in einer SQLite-Datenbank gespeichert. Unter https://www.sqlite.org/index.html wird die Datenbank wie folgt beschrieben: „SQLite ist eine C-Sprachbibliothek, die eine kleine, schnelle, in sich geschlossene, hochzuverlässige und voll funktionsfähige SQL-Datenbank-Engine implementiert. SQLite ist die meistgenutzte Datenbank-Engine der Welt. SQLite ist in allen Mobiltelefonen und den meisten Computern eingebaut und wird in zahllosen anderen Anwendungen mitgeliefert, die Menschen jeden Tag benutzen.“
+\n\nDie Daten können zusätzlich in einer Textdatei gespeichert werden. Siehe dazu unter <i>ALS TEXTDATEI (.TXT) SPEICHERN> (Gastronom)</i>
+
+\n\n<b>Datensicherung?</b>
+\n\nSiehe zunächst unter <i>Datensicherheit</i>. Siehe dann unter <i>ALS TEXTDATEI (.TXT) SPEICHERN> (Gastronom)</i>.
+\n\n<b>Die Gäste an einem Tisch sind gegangen. Was tue ich jetzt?</b>
+\n\nSehen Sie unter <i> TISCH ABSCHLIESSEN</i>.
+\n\n<b>BETRIEBSMODUS FRONTKAMERA/RÜCKAMERA?</b>
+\n\nIm Regelbetrieb scannt der Gastwirt mit der Rückkamera die Wirtshaus-Kartn. Über KONTAKTINFORMATIONEN/BETRIEBSMODUS =>  FRONTKAMERA/RÜCKAMERA kann die App auf Selbstscan-Modus umgeschaltet werden. Das Handy kann z.B.  auf einem Tisch am Eingang aufgestellt werden und Gäste können so Ihre Wirtshaus-Kartn selbst scannen. Ein erfolgreicher Scan wird mit einer Flutung des Bildschirms mit grüner Farbe angezeigt.\n\n<b>Kann ich als Gastronom die Daten der Gäste unverschlüsselt ansehen?</b>
+\n\nNein. Die Daten werden nur unmittelbar nach dem Scannen für wenige Sekunden im Klartext angezeigt, um die Plausibilität der Daten zu prüfen. Siehe dazu unter „Scannen“.
+\n\nEine Funktionskontrolle der Datenbank ist aber auch für den Gastronom möglich. Siehe dazu unter <i>KONTAKTIONFORMATIONEN GASTRONOM</i>.
+\n\n<b>KONTAKTINFORMATIONEN BEHÖRDE?</b>
+\n\nDie Behörde bekommt einen Brief mit Login und Passwort. Die Behörde kann darüber hinaus jederzeit unter info@covicard.de neue Zugangsdaten anfordern.
+\n\nDie Behörde tippt dann auf dem Handy auf KONTAKTINFORMATIONEN, dann auf KONTAKTINFORMATIONEN BEHÖRDE. Die Behörde gibt dann das Login und das Passwort ein. Sie achtet dabei auf Groß- und Kleinschreibung. Anschließend bestätigt Sie mit KONTAKTINFORMATIONEN ABRUFEN.
+\n\nDie Behörde tippt auf ALS TEXTDATEIN (.TXT) SPEICHERN. Es wird kurz die Nachricht eingeblendet „X Kontaktinformationen gespeichert!“ Zudem erscheint unter dem Button der Speicherort, an dem die Behörde die Textdatei finden kann. Dort finden die Behörde auch den Namen der Datei. Er lautet: kontaktinformationen_behoerde.txt
+\n\nTIPP: Die Behörde hat zwei Möglichkeiten zu diesem Speicherort zu kommen.
+
+\n\nMöglichkeit 1:
+\n\nAuf fast allen Android-Geräten finden die Behörde vorinstalliert eine Dateimanager-App (bei Samsung heißt diese z.B. Eigene Dateien). Das ist das Pendant zum Explorer, den die Behörde von vielen Windows-Rechnern her kennt. Hat das Handy noch keinen Dateimananger, kann die Behörde einen aus dem Playstore herunterladen. Die Behörde öffnet die Dateimanager-App. Die Behörde tippt auf Interner Speicher, dann auf Android, dann auf data, dann auf com.wirtshauskartn.wirtshauskartnyellow, dann auf files, dann auf wirtshauskartn. Fast alle Dateimanager bieten die Möglichkeit, die Dateien zu verschieben, z.B. auf einer externen SD-Card zu speichern. Sie bieten in der Regel auch die Möglichkeit, die Dateien zu teilen, z.B. zu mailen. Das wird die Behörde aber erst nach Rücksprache mit ihrem Datenschutzbeauftragten tun.
+\n\n2. Möglichkeit: Die Behörde verbindet das Handy mit einem PC über das mit dem Handy mitgelieferte Kabel.  Die Behörde bittet den Gastronom, das Handy zu entschlüssseln. Sie öffnet dann  den Windows Explorer. Sie klickt auf <i>Dieser PC</i>, dann auf den Namen des Handys, dann auf <i>Phone</i>, dann   auf <i>Android, </i>dann auf <i>data</i>, dann auf <i>com.wirtshauskartn.testcardscanner</i>, dann auf <i>files</i>, dann auf <i>wirtshauskartn</i>. Die Behörde kann jetzt mit der Datei kontaktinformationen_behoerde.txt alles machen, was man mit normalen Textdateien auch machen kann, also z.B. per drag and drop die Datei auf den PC oder einen USB-Stick kopieren, in einem Tabellen- oder Textverarbeitungsprogramm öffnen oder als Datensätze in eine Datenbank importieren.
+
+\n\nBenötigen die Behörde die Daten in einer CSV-Datei, geht sie wie folgt vor: Sie öffnet die Datei, z.B. mit dem Windows-Programm Editor. Sie wählt speichern unter und speichert die Datei unter dem Namen kontaktinformationen_behoerde.csv. Sie kann diese Datei jetzt als CSV-Datei benutzen."\n\n<b>KONTAKTINFORMATIONEN GASTRONOM?</b>
+\n\nUnter <i>Kontaktinformationen Betriebsmodus </i> => <i>Kontaktinformationen Gastronom</i> können Sie kontrollieren, ob die Angaben sauber gespeichert wurden und welche bereits gespeichert sind. Angezeigt werden <ul><li>
+Vorname </li>
+<li> gespeicherte Daten in verschlüsselter Form</li>
+<li>  „Datum“, „Gekommen“, „Gegangen“ und „Tisch“.</li></ul>
+Sie haben <u>keine</u> Möglichkeit, die Daten zu entschlüsseln. Nur die Behörde kann die Daten entschlüsseln und anschließend entschlüsselt auslesen.
+
+\n\nTipp:  Denken Sie daran, die Tischnummer einzugeben, bevor Sie die Wirtshauskartn eines Gastes scannen.
+\n\n<b>Ich habe Angst, dass die gespeicherten Daten verloren gehen. Kann ich sie sichern?</b>
+\n\nSie müssen keine Angst haben, dass die Daten verloren gehen. Siehe dazu unter <i>Datensicherheit (technische).</i>.
+\n\n<b>Internetzugang erforderlich?</b>
+\n\nFür den Regelbetrieb ist kein Internet nötig. Ein Internetzugang ist nur nötig, wenn die Behörde die Daten entschlüsselt aufrufen möchte. Die Zugangsdaten der Behörden werden dann mit einer Datenbank im Internet abgeglichen. Für alle anderen Funktionen ist kein Internetzugang nötig.
+\n\n<b>Scannen?</b>
+\n\nRichten Sie die Kamera auf die Wirtshaus-Kartn Ihres Gastes. Sobald der QR-Code erfasst wurde, vibriert das Handy.
+\n\nTipp: Denken Sie daran, die Tischnummer einzugeben, bevor Sie eine Wirtshaus-Kartn scannen (siehe: <i>Tischnummer</i>).
+\n\nAuf dem Display wird kurz der Name und die Telefonnummer oder die E-Mail-Adresse des Gastes angezeigt. Kontrollieren Sie, ob die Angaben plausibel (z.B. Harald Müller harald.mueller@gmx.de) und keine offensichtlichen Falschangaben sind (z.B. Ludwig II Köning von Bayern 089 123456789).
+\n\nAchtung: Sie haben nur an dieser Stelle die Möglichkeit, die Angaben vollständig unverschlüsselt zu lesen. Die entschlüsselten Daten werden nämlich nicht gespeichert. Unter <i>Kontaktinformationen Betriebsmodus </i> => <i>Kontaktinformationen Gastronom</i> können Sie aber kontrollieren, ob die Angaben sauber gespeichert wurden und welche bereits gespeichert sind (siehe: <i>Kontaktinformationen Gastronom</i>).
+\n\n<b>Start?</b>
+
+\n\nBevor Sie die App zum ersten Mal benutzen, gehen Sie unter <i>Einstellungen</i> => <i>Apps </i>und tippen Sie dort auf die App <i>Kartn-Scanner</i>. Tippen Sie dort auf <i>Berechtigungen</i> und aktivieren Sie <i>Kamera</i> und <i>Speicher</i>.
+\n\nWeitere Einstellungen sind nicht nötig. Sie können jetzt sofort loslegen.
+\n\nTipp: Denken Sie daran, die Tischnummer einzugeben, bevor Sie eine Wirtshaus-Kartn scannen (siehe: <i>Tischnummer</i>). .
+\n\n<b>TISCH?</b>
+
+\n\nUnter dem blauen Wort TISCH wird die Nummer des jeweils aktiven Tischs („Tischnummer“) angezeigt. Jede Wirtshaus-Kartn, die gescannt wird, wird der jeweils aktiven Tischnummer zugeordnet.
+\n\nMit <i>TISCH ABSCHLIESSEN</i> wird bei allen Kontaktinformationen, die zu dieser Tischnummer gespeichert wurden, die aktuelle Uhrzeit als Geh-Zeit eingetragen.
+\n\nSiehe im Einzelnen unter <i>Tischnummer</i> und <i>TISCH ABSCHLIESSEN</i>.
+\n\n<b>TISCH ABSCHLIESSEN</b>
+\n\nKontrollieren Sie, ob die blaue Nummer, die etwas größer ist, als die schwarze Nummer, und die sich direkt unter dem blauen Wort „TISCH“ befindet, die Nummer des Tischs anzeigt, an dem die Gäste gerade gegangen sind.
+\n\nSteht dort die falsche Nummer, geben Sie die richtige Nummer ein (siehe: <i>Tischnummer</i>).
+\n\nTippen Sie auf den orangenen Text „TISCH ABSCHLIESSEN“. Das Handy vibriert kurz. Das Vibrieren zeigt an, dass der Tisch abgeschlossen wurde. Dies bedeutet, dass bei allen Gästen, die zu diesem Tisch registriert worden sind, die aktuelle Uhrzeit bei „Gegangen“ eingetragen worden ist.
+\n\n<b>Tischnummer?  </b>
+\n\nÜber die Tischnummer wird mit „Tisch abschließen“ bei allen Gästen, die mit der Tischnummer registriert waren, die Geh-Zeit gespeichert.
+\n\nSie haben zwei Möglichkeiten, die Tischnummer einzugeben.
+\n\nMöglichkeit 1: Tippen Sie auf die kleine schwarze (nicht die etwas größere blaue) Nummer, die unter dem blauen Wort „TISCH“ zu finden ist. Es erscheint ein Nummernblock. Tippen Sie die gewünschte Tischnummer ein. Bestätigen Sie im Nummernblock mit „OK“. Tippen Sie an eine beliebige Stelle außerhalb des Nummernblocks, damit er wieder verschwindet.
+\n\nMöglichkeit 2: Sie haben QR-Codes mit den Tischnummern auf Ihren Tischen? Scannen Sie einfach den jeweiligen QR-Code.
+\n\n<b>Woher bekommt die Behörde Ihr Login und Passwort?</b>n\n\Die Behörde bekommt einen Brief mit Login und Passwort. Die Behörde kann darüber hinaus jederzeit unter info@covicard.de neue Zugangsdaten anfordern.\n\n<b>Registrierung erforderlich?</b>\n\n
+
+
+Nein. Es ist keine Registrierung nötig. Die App ist sofort startklar. Siehe auch unter „Start?“.
+
+
+
+
+
+
+</string>
+</resources>
