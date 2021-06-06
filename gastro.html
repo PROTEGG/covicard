@@ -1,0 +1,366 @@
+<!--******************************* HEAD **********************************-->
+
+
+<head>
+    <title>COVICARD - appfreie Visitenkarte für Kontaktnachverfolgung</title>
+  
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/png" href="/IMG_0588.PNG" sizes="32x32">
+    <meta name="description" content="Corona: Identifizieren - kontaktlos, hygienisch, automatisch, app-los, internetfrei und ANONYM!"/>
+	<meta name="robots" content="noindex"/>
+
+<!--******************************* STYLE **********************************-->
+
+<style>
+
+#tabelle {
+ font-family: Verdana;
+  border-collapse: collapse;
+  background-image: url(brand.PNG);
+} 
+
+#infoblock{
+    border: 2px solid black;
+  border-radius: 8px;
+}
+
+ 
+#oben {
+ font-family:  Verdana;
+  background-color: white;
+  border: 2px solid #999;
+	border-radius: 0.5em;
+padding: 20px;
+font-size: 30px
+} 
+
+#schrift {
+color:grey;
+font-family: Verdana;
+font-size: 15px
+}
+
+#schrift2 {
+font-family: Verdana;
+font-size: 40px
+}
+
+#schrift3 {
+font-family: Verdana;
+font-size: 20px
+}
+
+#datenschutzschrift {
+font-family: Verdana;
+font-size: 20px;
+color: black;
+}
+
+#suche {
+width: 13em;
+border: 2px solid #999;
+border-radius: 0.5em;
+font-size: 1.2em;
+transition: width 0.5s ease-in-out;
+}
+
+#suche1 {
+border: 2px solid #999;
+border-radius: 0.5em;
+font-size: 1.2em;
+transition: width 0.5s ease-in-out;
+}
+
+#suche2 {
+font-size: 1.2em;
+transition: width 0.5s ease-in-out;
+}
+
+#headline {
+font-family: Verdana;
+font-size: 60px;
+color: black;
+}
+#buttonMenue{
+ background-image: url("menuebuttonO.png");
+ top: -2em;
+}
+#buttonIdea{
+ background-image: url("ideaFragO.png");
+ top: -2em;
+ right: 8em;
+}
+#buttonNew{
+ background-image: url("makeG.png");
+ top: 40em;
+}
+
+.dropbtn {
+  width: 90px;
+  height: 75px;
+  background-size: cover;
+  cursor: pointer;
+  background-color: transparent;
+  border: none; 
+  position: absolute;
+  right: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: grey;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  top: 3em;
+  right: 2em;
+ 
+}
+
+.menuebar {
+  position: absolute;
+  display: inline-block;
+  top: 0em;
+  width: 100%;
+  height: 7em;
+  background-color: #8A7B57  ;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  left: 0px;
+  background-color: #fbfbfb;
+  min-width: 200px;
+  max-width: 500px;
+  padding: 20px;
+  overflow: none;
+  
+}
+
+.dropdown-content a {
+  position: relative;
+  left: 5px;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+
+<!--******************************* SCRIPT FOR MENUE BUTTONS **********************************-->
+
+<script>
+
+// ****** When Button clicked, open menue ******
+
+function myFunctionMenue() {
+  document.getElementById("MenueDropdown").classList.toggle("show");
+}
+
+function myFunctionIdea() {
+  document.getElementById("IdeaDropdown").classList.toggle("show");
+}
+
+function myFunctionNeu() {
+  window.location.assign("neu.php")
+}
+
+// ****** When tapped in screen, close menue ******
+ 
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+
+</script>
+
+</head>
+
+
+
+<!--******************************* Headline **********************************-->
+
+<br><br><br><br><br><br><br><br>
+
+<table align=center valign=center width=800px >
+
+    <tr height =50 valign=center>
+        <td align=center valign=center style="font-family: Verdana; font-size: 80"> 
+    
+            <b>COVICARD</b><div style="font-family: Verdana; font-size: 40; color: #8A7B57">GASTRO<br><br></div>
+            <div style="font-family: Verdana; font-size: 40; color: black"> appfreie Visitenkarte für Jung und Alt<br><br></div>
+        </td>
+    </tr>
+    <tr height =300px valign=center>
+        
+        <td  align=center>
+        
+            <div class="w3-content w3-section" valign=center >
+                <img class="mySlides w3-animate-left" src="IMG_0552.PNG"  align=center valign=center>
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 9000);    
+                }
+            </script>
+        </td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+<table id=schrift width=100%>
+<tr>
+    <td></td>
+    <td  width = 80% align=center>
+        <h1 style="font-size: 40px"><br><br><br>Demo.</h1><br><br><br><br>
+    <video src="erklaervideo.mp4" controls  autoplay muted loop width=288px id=suche1>
+  Ihr Browser kann dieses Video nicht wiedergeben.<br/>
+  Dieser Film zeigt eine Demonstration des video-Elements. 
+  Sie können ihn unter <a href="explain.mp4">hier</a> abrufen.
+</video></td>
+    
+    <td></td>
+</tr>
+
+
+
+<tr height =80>
+    <td></td>
+    </tr>
+    
+   <tr> 
+     <td></td>
+     <td  align=center>
+         <h1 style="font-size: 40px"><br>Erklärfilm für Ihre Gäste.</h1><br>
+         
+         <iframe id=suche1 width="600" height="337.5" src="https://www.youtube.com/embed/fKSbKhzOaH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         
+         <br><br><br><br><br><br>
+        
+          </td>
+     
+     <td></td>
+</tr> 
+    
+
+</table><table align=center>
+<tr> 
+     <td></td>
+     <td  align=center>
+         <h1 style="font-size: 40px;font-family: Verdana; color:grey"><br><br>Download Gastro-Scanner.</h1><br><br>
+           <a href="https://play.google.com/store/apps/details?id=com.wirtshauskartn.testcardscanner"><img src="googleplay.PNG" width=400px></a>
+         
+          
+         
+         
+          </td>
+     
+     <td></td>
+</tr><tr> 
+     <td></td>
+     <td  align=center><h1 style="font-size: 40px;font-family: Verdana; color:grey"><br>Ihre Vorteile auf einen Blick!</h1><br><br><br><br> </td>
+     
+     <td></td>
+</tr>
+
+</table>
+<div style="font-family: Verdana; font-size: 20px; text-decoration:none; color: white; background-color: #8A7B57; width: 800px; text-align: left; border: 2px solid #999; border-radius: 0.5em; padding: 20px;position: absolute; margin-left: -400px; left: 50%;">
+<br><br><b>Gastfreundlich</b><br><br><li>Ihr Gast benötigt kein Handy.<br></li><li>Ihr Gast muss keine App herunterladen und installieren.<br></li><li>Ihr Gast muss sich nirgends anmelden, registrieren oder identifizieren.<br><li>Ihr Gast bleibt privat: Bewegungs- oder Freundschaftsprofile sind wirtschaftlich unmöglich.<br></li><li>Ihr Gast hat noch keine Karte oder seine Karte vergessen? Das ist kein Problem. Wenn er ein Handy hat und damit umgehen kann, kann er sich in fünf Sekunden eine (neue) erstellen. Wenn er kein Handy haben sollte oder damit nicht umgehen kann, drucken Sie ihm schnell eine aus; das Kartenformat ist bondruckerfreundlich. <br></li><br><b>Geldbeutelfreundlich</b><br><br><li>Das komplette System ist Freeware, einschließlich der Scanner-App.<br><li>Es funktioniert mit jedem handelsüblichen Browser,  der Scanner mit jedem Android-Handy. <br></li><li>Es ist keine weitere Hardware nötig.<br></li><li>Es gibt keine Servermiete, kein Abo oder sonstige verstecke Kosten.</li> <br><br>Unabhängig:<br><br><li>Der Scanner und die bereits erstellten Karten funktionieren ohne Internet (außer bei der Kontrolle von negativen Tests oder von Reservierungen).<br></li><li>Die Software ist öffentlich und darf beliebig kopiert und verändert werden. Das gilt nicht nur für den Scanner, sondern auch für die Seite, mit der die Karten erstellt werden können. <br></li><li>Wird die Seite nicht mehr betrieben, kann sie jederzeit auf einem anderen Server wieder in Gang gesetzt werden.</li><br><br><b>Sicher</b><br><br><li>Solange Ihr Handy funktioniert, sind Ihre Daten sicher.<br></li><li>Erstellen Sie mit wenigen Klicks jederzeit eine Sicherungskopie Ihrer Daten.</li><br><br><b>Gesetzeskonform</b><br><br><li>DS-GVO konforme Datenschutzerklärung kann in fünf Sekunden mit einem praktischem Datenschutzerklärungsgenerator erstellt werden.<br></li><li>Keine offenen Gästelisten.<br></li><li>Daten werden ausschließlich verschlüsselt gespeichert.<br></li><li>Kurzdeanonymisierung erlaubt Plausibiliätskontrolle: Keine Dagoberts und Lieschen Müllers mehr.<br></li><li>Sie erfassen - so ist sichergestellt, dass jeder Gast erfasst wird.</li><br><br><br><b>Funktionen</b><br><br><u>Sofortstart</u>: Es ist keine Anmeldung, Registrierung oder Verifizierung nötig - einfach App installieren und ohne jede Einrichtung sofort loslegen.<br><br><u>Drei-Sekunden-Gasterfassung</u>  Tischnummer eingeben oder scannen,  QR-Code von Gast scannen, nach Plausibilitätsprüfung Button OK drücken.<br><br><u>Ankunftszeiterfassung</u> Automatische Erfassung von Datum und Ankunftszeit.<br><br><u>Zwei-Sekunden-Gehzeit-Erfassung</u> Tischnummer eingeben oder scannen und Button ABSCHLIESSEN drücken.<br><br><u>Sperrzeit-Funktion</u>: Gleichzeitige Gehzeit-Erfassung von allen Gästen in einer Sekunde - Button Werkzeugschlüssel und dann Button SPERRZEIT drücken. Bei allen noch offenen Gästen wird die aktuelle Uhrzeit als Gehzeit erfasst.<br><br><u>Drei-Sekunden-Datensicherung</u>: Button Werkzeugschlüssel, Button MEINE KONTAKTDATEN und Button SPEICHERN drücken.<br><br><u>Fünf-Sekunden-Datenexport an Behörde</u>: Button Werkzeugschlüssel, Button MEINE KONTAKTDATEN und Button EINEN (1) TAG teilen drücken, Tag auswählen, mit beliebigen Programm (E-Mail, Messenger etc) an Behörde weiterleiten.<br><br><u>Beleuchtung</u>: Button Glühlampe drücken - sehr praktisch, wenn es zu schummrig ist.<br><br><u>Sie haben unter Click and Meet  für sich ein Reservierungssystem eingerichtet?</u> Automatische Verifizierung der Reservierung. <br><br><u>Der Gast verfügt über ein negatives Testzertifikat, das mit Covicard erzeugt wurde?</u> Automatische Verifizierung der Reservierung. <br><br><u>Sonstige Vorteile:</u> Universelles Datenformat: Datenexport  im universell lesbaren CSV Format  (z.B. für Excel).<br>Systemübergreifend: Die Behörde braucht keine besondere Schnittstelle, Soft- oder Hardware; ein handelsüblicher Computer genügt.<br>Kontaktdaten werden verschlüsselt, alle übrigen Daten in der Folge anonymisiert gespeichert. <br><br>  
+    
+    </div>
+         
+         
+
+
+<!--******************************* MENUE **********************************-->
+
+<div class="menuebar">
+
+<div class="dropdown">
+    
+  <button onclick="myFunctionMenue()" class="dropbtn" id=buttonMenue> </button>
+  <button onclick="myFunctionIdea()" class="dropbtn" id=buttonIdea> </button>
+  <button onclick="myFunctionNeu()" class="dropbtn" id=buttonNew> </button>
+  
+  <div id="MenueDropdown" class="dropdown-content">
+        <a href="index.html" style="font-family: Verdana; font-size: 30px; text-decoration:none; color: black;" ><b>HOME</b></a><br><br>
+        <a href="neu.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: #FFD800;" ><b>CARD ERSTELLEN</b></a><br><br>
+        <a href="gastro.html" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: #8A7B57;" ><b>GASTRO</b></a><br><br>
+        <a href="scannerDiary3.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: orange;" ><b>TAGEBUCH</b></a><br><br>
+        <a href="clickandmeet.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: #A927C9;" ><b>CLICK & MEET</b></a><br><br>
+        <a href="authorityentry.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: green;" ><b>GRÜNER PASS</b></a><br><br><br>_______________________<br><br><br>
+        <a href="fileGetter.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: grey;" >ENTSCHLUESSELER</a><br><br>
+        <a href="download.htm" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: black;" >Download Scanner-App</a><br><br>
+        <a href="labelcreator.php" style="font-family: Verdana; font-size: 30px;text-decoration:none;color: black;">Türschild</a><br><br>
+        <a href="anleitung.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: black;" >Anleitung</a><br><br>
+        <a href="datenschutzvorgenerator.htm" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: black;" >Datenschutz-<br>erklärungsgenerator</a><br><br>
+        <a href="impressum.htm" style="font-family: Verdana; font-size: 30px;text-decoration:none;color: black;">Impressum</a><br><br>
+        <a href="Datenschutz.htm" style="font-family: Verdana; font-size: 30px;text-decoration:none;color: black;">Datenschutz</a><br><br>
+    </div>
+
+    <div id="IdeaDropdown" class="dropdown-content" style="font-family: Verdana; font-size: 20px; text-decoration:none; color: black;" >
+        
+  Vorteile<br><br><br><br>Gastfreundlich:<br><br>Ih Gast benötigt kein Handy.<br>Ihr Gast muss keine App herunterladen und installieren.<br>Ihr Gast muss sich nirgends anmelden, registrieren oder identifizieren.<br>Ihr Gast bleibt privat: Bewegungs- oder Freundschaftsprofile sind wirtschaftlich unmöglich.<br>Ihr Gast hat noch keine Karte oder seine Karte vergessen? Das ist kein Problem. Wenn er ein Handy hat und damit umgehen kann, kann er sich in fünf Sekunden eine (neue) erstellen. Wenn er kein Handy haben sollte oder damit nicht umgehen kann, drucken Sie ihm schnell eine aus; das Kartenformat ist bondruckerfreundlich. <br><br>Geldbeutelfreundlich:<br><br>Das komplette System ist Freeware, einschließlich der Scanner-App.<br>Es funktioniert mit jedem handelsüblichen Browser,  der Scanner mit jedem Android-Handy. <br>Es ist keine weitere Hardware nötig.<br>Es gibt keine Servermiete, kein Abo oder sonstige verstecke Kosten. <br><br>Unabhängig:<br><br>Der Scanner und die bereits erstellten Karten funktionieren ohne Internet (außer bei der Kontrolle von negativen Tests oder von Reservierungen).<br>Die Software ist öffentlich und darf beliebig kopiert und verändert werden. Das gilt nicht nur für den Scanner, sondern auch für die Seite, mit der die Karten erstellt werden können. <br>Wird die Seite nicht mehr betrieben, kann sie jederzeit auf einem anderen Server wieder in Gang gesetzt werden.<br><br>Sicher:<br><br>Solange Ihr Handy funktioniert, sind Ihre Daten sicher.<br>Erstellen Sie mit wenigen Klicks jederzeit eine Sicherungskopie Ihrer Daten.<br><br>Gesetzeskonform:<br><br>DS-GVO konforme Datenschutzerklärung kann in fünf Sekunden mit einem praktischem Datenschutzerklärungsgenerator erstellt werden.<br>Keine offenen Gästelisten.<br>Daten werden ausschließlich verschlüsselt gespeichert.<br>Kurzdeanonymisierung erlaubt Plausibiliätskontrolle: Keine Dagoberts und Lieschen Müllers mehr.<br>Sie erfassen - so ist sichergestellt, dass jeder Gast erfasst wird.<br><br><br>Funktionen der Scanner-App:<br><br>Sofortstart: Es ist keine Anmeldung, Registrierung oder Verifizierung nötig - einfach App installieren und ohne jede Einrichtung sofort loslegen.<br><br>Drei-Sekunden-Gasterfassung:  Tischnummer eingeben oder scannen,  QR-Code von Gast scannen, nach Plausibilitätsprüfung Button OK drücken.<br><br>Ankunftszeiterfassung: Automatische Erfassung von Datum und Ankunftszeit.<br><br>Zwei-Sekunden-Gehzeit-Erfassung: Tischnummer eingeben oder scannen und Button ABSCHLIESSEN drücken.<br><br>Sperrzeit-Funktion: Gleichzeitige Gehzeit-Erfassung von allen Gästen in einer Sekunde - Button Werkzeugschlüssel und dann Button SPERRZEIT drücken. Bei allen noch offenen Gästen wird die aktuelle Uhrzeit als Gehzeit erfasst.<br><br>Drei-Sekunden-Datensicherung: Button Werkzeugschlüssel, Button MEINE KONTAKTDATEN und Button SPEICHERN drücken.<br><br>Fünf-Sekunden-Datenexport an Behörde: Button Werkzeugschlüssel, Button MEINE KONTAKTDATEN und Button EINEN (1) TAG teilen drücken, Tag auswählen, mit beliebigen Programm (E-Mail, Messenger etc) an Behörde weiterleiten.<br><br>Beleuchtung: Button Glühlampe drücken - sehr praktisch, wenn es zu schummrig ist.<br><br>Sie haben unter Click and Meet  für sich ein Reservierungssystem eingerichtet? Automatische Verifizierung der Reservierung. <br><br>Der Gast verfügt über ein negatives Testzertifikat, das mit Covicard erzeugt wurde? Automatische Verifizierung der Reservierung. <br><br>Sonstige Vorteile: Universelles Datenformat: Datenexport  im universell lesbaren CSV Format  (z.B. für Excel).<br>Systemübergreifend: Die Behörde braucht keine besondere Schnittstelle, Soft- oder Hardware; ein handelsüblicher Computer genügt.<br>Kontaktdaten werden verschlüsselt, alle übrigen Daten in der Folge anonymisiert gespeichert. <br><br><b>Technisches:</b><br><br>Überblick<br><br>Es gibt drei Arten von Covicards: Die Standardkarte, eine Karte mit Testzertifikat und eine Karte mit Termin. <br>Die letzten beiden Karten sind immer auch Standardkarten und können immer auch als Standardkarte benutzt werden. <br>Die Karte mit Testzertifikat kann nur eine Behörde herstellen. <br>Eine Karte mit Termin kann nur erzeugt werden, wenn der Gastgeber (Gastwirt, Einzelhandelsgeschäft, Behörde usw.) eine Terminbuchungsseite eingerichtet hat.<br><br>Standardkarte<br><br>Der Gast oder der Gastgeber (Gastwirt, Einzelhandelsgeschäft, Behörde usw.) erstellen die Covicard des Gasts im Internet unter covicard.de/neu.php. <br>Dazu werden Vorname, Nachname und E-Mail-Adesse in ein (1) Feld getippt. Es ist egal, ob Kommas eingegeben werden oder nicht. <br>Man kann die Karte mit dem Drücken der Rückstelltaste (Returntaste, Entertaste), aber auch über Buttons anfordern. <br>Es kann gewählt werden zwischen einer Karte, auf der neben dem QR-Code auch Namen und Adresse aufgedruckt sind, oder einer Karte nur mit QR-Code.<br><br>Sinn: Vielleicht möchte der Gast nicht, dass seine Daten elektronisch erfasst werden. Vielleicht will oder kann der Gastgerber (auch) keine App benutzen. Wie auch immer: Was ist leichter für eine Kontaktdatenerfassung, als einfach eine Visitenkarte zu hinterlassen.<br><br>Die Daten werden auf einen Server in Europa übertragen und dort in die Covicard umgewandelt. Die Übertragung ist Https-gesichert. <br><br>Sinn: Die Daten müssen verschlüsselt werden. Dazu ist u.a. ein Schlüssel nötig. Dieser sollte nicht öffentlich bekannt werden. Er ist daher auf einem Server, nicht aber in der Webseite hinterlegt, die jeder ansehen kann.<br><br>Die Daten werden sofort nach der Erstellung der Covicard aktiv wieder gelöscht. Es gibt keine zentrale Speicherung von Daten (Ausnahme: Karte mit Testzertifikat oder Termin, siehe unten)!<br>Die Covicard wird sofort angezeigt. Mit einem Tippen auf die Karte wird automatisch der Download eingeleitet. <br>Die Karte funktioniert auch, wenn sie abfotografiert oder ausgedruckt wird (auch mit Bondrucker) oder wenn von ihr ein Screenshot gemacht wird.<br><br>Auf einer Covicard finden sich im QR-Code die folgenden Informationen: Vorname im Klartext / Vorname, Nachname und E-Mail-Adresse als verschlüsselter Code ( AES 128 cbc) / ggf. (bei einer Karte mit Testzertifikat oder Termin) eine individuelle Buchstaben- und Zahlenkombination, der sogenannte Token, und eine Speicheradresse, unter der die Kombination überprüft werden kann, ebenfalls als verschlüsselter Code (AES 128 cbc). <br><br>Der QR-Code kann mit jedem QR-Code-Reader ausgelesen werden. <br><br>Scanner-App<br><br>Die Scanner-App läuft auf fast jedem Android-Handy. Sie funktioniert nur mit einem Handy mit einem Android-Betriebssystem. D.h. die App läuft auf fast jedem Handy, außer einem iPhone.<br><br>Die Scanner-App verfügt über einen QR-Code-Reader. Sie erfasst jeden QR-Code, der mit dem Sucher erfasst wird. Ein erfasster Code wird mit einem kräftigen Vibrieren angezeigt.<br><br>Darth-Vader-und-Dagobert-Duck-Sperre: Die App dechiffriert die verschlüsselten Kontaktinformationen und zeigt sie im Klartext an. <br>Der Gastgeber kann jetzt entscheiden, ob er die Angaben für plausibel oder für Fantasiebezeichnungen hält. <br>Mit einem Klick auf den Button OK lässt er den Gast zu oder weist ihn mit einem Klick auf NO zurück. <br><br>In beiden Fällen werden die dechiffrierten Informationen sofort wieder gelöscht und die Daten wie auf der Karte, also mit Ausnahme des Vornamens vollständig verschlüsselt im Handy gespeichert. <br>Der Schlüssel für die Dechiffrierung ist im Maschinencode eingebettet. Es ist sehr schwierig, diesen Schlüssel zu hacken, aber nicht unmöglich. Der Schlüssel für die Dechiffrierung des zweiten Codes ist in der App nicht vorhanden. Diese Daten können nicht dechiffriert werden.<br><br>Die Speicherung erfolgt in der SQL-lite Datenbank des Android-Betriebssystems. <br><br>Zusammen mit dem Vornamen und den verschlüsselten Codes werden gespeichert und zwar unverschlüsselt: Ankunftszeit, Gehzeit, Datum, zugelassen/abgewiesen, ggf. Platznummer, Kontrollnummer (bei kontrolliertem Testzertifikat) oder „Termin vereinbart“ oder „nur Covicard“.<br><br>Der Gastgeber kann diese Daten jederzeit in einer durchlaufenden Tabelle anzeigen lassen. Der Gastgeber kann diese Daten in einer Tabellendatei speichern. Der Gastgeber kann diese Tabellendatei exportieren und verschicken. Der Gastgeber kann eine auf einen Tag beschränkte Tabellendatei erzeugen und auch diese exportierten.<br><br>Nur bei Eingabe eines Behördenlogins und eines Behördenpassworts können die verschlüsselten Teile der Daten entschlüsselt und die Daten damit deanonymisiert werden. Weder Login noch Passwort sind in der Scanner-App hinterlegt. Sie sind auch nicht auf dem Server von Covicard hinterlegt, dort finden sich nur Hashs dieser Angaben. Ein Hash ist ein Einbahnstraßen-Code. Ein und derselbe Name führt immer wieder zum selben Hash. Es ist dagegen wirtschaftlich unmöglich, aus dem Hash den Namen zu rekonstruieren. Die Überprüfung findet ausschließlich auf dem Server statt. Die Behörde kann mit den dechiffrierten Daten dann verfahren wie der Gastwirt mit den chiffrierten.
+        
+    </div>
+    
+</div>
+
+</div>
+<!--******************************* LEGAL-BAR **********************************-->
+
+<table style="width: 100%; font-family: Verdana; font-size: 6;  margin-left: auto; margin-right: auto; left: 0; right: 0;  top:210em; text-align: center; ">
+         <tr height = 3500px><td></td></tr>
+         <tr><td align=center valign=center  id=schrift style="background-color: #8A7B57; color: white">
+             
+              <br>COVICA 2020 * Bilder und Zeichnungen BEM'20 * <a href = "impressum.htm">Impressum</a> * <a href ="Datenschutz.htm">Datenschutz</a> <br><br>
+             </td>
+            
+         </tr>
+     </table> 
+</body>
+

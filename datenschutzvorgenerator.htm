@@ -1,0 +1,317 @@
+<!--******************************* HEAD **********************************-->
+
+
+<head>
+    <title>COVICARD - appfreie Visitenkarte für Kontaktnachverfolgung</title>
+  
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/png" href="/IMG_0588.PNG" sizes="32x32">
+    <meta name="description" content="Corona: Identifizieren - kontaktlos, hygienisch, automatisch, app-los, internetfrei und ANONYM!"/>
+	<meta name="robots" content="noindex"/>
+
+<!--******************************* STYLE **********************************-->
+
+<style>
+
+#tabelle {
+ font-family: Verdana;
+  border-collapse: collapse;
+  background-image: url(brand.PNG);
+} 
+
+#infoblock{
+    border: 2px solid black;
+  border-radius: 8px;
+}
+
+ 
+#oben {
+ font-family:  Verdana;
+  background-color: white;
+  border: 2px solid #999;
+	border-radius: 0.5em;
+padding: 20px;
+font-size: 30px
+} 
+
+#schrift {
+color:grey;
+font-family: Verdana;
+font-size: 15px
+}
+
+#schrift2 {
+font-family: Verdana;
+font-size: 40px
+}
+
+#schrift3 {
+font-family: Verdana;
+font-size: 20px
+}
+
+#datenschutzschrift {
+font-family: Verdana;
+font-size: 20px;
+color: black;
+}
+
+#suche {
+width: 20em;
+
+border-radius: 0.5em;
+font-size: 30px;
+transition: width 0.5s ease-in-out;
+}
+
+#suche1 {
+border: 2px solid #999;
+border-radius: 0.5em;
+font-size: 1.2em;
+transition: width 0.5s ease-in-out;
+}
+
+#suche2 {
+font-size: 1.2em;
+transition: width 0.5s ease-in-out;
+}
+
+#headline {
+font-family: Verdana;
+font-size: 60px;
+color: black;
+}
+#buttonMenue{
+ background-image: url("menuebuttonW.png");
+ top: -2em;
+}
+#buttonIdea{
+ background-image: url("ideaFragW.png");
+ top: -2em;
+ right: 8em;
+}
+#buttonNew{
+ background-image: url("makeG.png");
+ top: 40em;
+}
+
+.dropbtn {
+  width: 90px;
+  height: 75px;
+  background-size: cover;
+  cursor: pointer;
+  background-color: transparent;
+  border: none; 
+  position: absolute;
+  right: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: grey;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  top: 3em;
+  right: 2em;
+ 
+}
+
+.menuebar {
+  position: absolute;
+  display: inline-block;
+  top: 0em;
+  width: 100%;
+  height: 7em;
+  background-color: grey;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  left: 0px;
+  background-color: #fbfbfb;
+  min-width: 200px;
+  max-width: 500px;
+  padding: 20px;
+  overflow: none;
+  
+}
+
+.dropdown-content a {
+  position: relative;
+  left: 5px;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+
+<!--******************************* SCRIPT FOR MENUE BUTTONS **********************************-->
+
+<script>
+
+// ****** When Button clicked, open menue ******
+
+function myFunctionMenue() {
+  document.getElementById("MenueDropdown").classList.toggle("show");
+}
+
+function myFunctionIdea() {
+  document.getElementById("IdeaDropdown").classList.toggle("show");
+}
+
+function myFunctionNeu() {
+  window.location.assign("neu.php")
+}
+
+// ****** When tapped in screen, close menue ******
+ 
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+
+
+</script>
+
+</head>
+
+
+
+<!--******************************* Headline **********************************-->
+
+<br><br><br><br><br><br><br><br>
+
+
+<table align=center valign=center width=800px >
+
+    <tr height =50 valign=center>
+        <td align=center valign=center style="font-family: Arial; font-size: 80"> 
+    
+            <b>COVICARD</b><div style="font-family: Arial; font-size: 40; color: grey">DATENSCHUTZERKLÄRUNGSGENERATOR<br><br></div>
+            <div style="font-family: Arial; font-size: 40; color: black"> appfreie Visitenkarte für Jung und Alt<br><br></div>
+        </td>
+    </tr>
+</table><br><br><br><br>
+
+
+<table width = 80% align=center>
+<tr>
+<td></td>
+<td  width =80% align =center valign=center>
+
+<form  action="datenschutzgenerator.php">
+  <input id=suche type="text" id="Name" name="Name" placeholder="Firmenname"><br><br>
+  <input id=suche type="text" id="Rechtsform" name="Rechtsform" placeholder="Rechtsform (z.B. GmbH)"><br><br>
+<input id=suche type="text" id="Vertreter" name="Vertreter" placeholder="Name Geschäftsführer"><br><br>
+  <input id=suche type="text" id="Adresse" name="Adresse" placeholder="Straße, Hausnummer, PLZ, Ort"><br><br> 
+  <input id=suche type="text" id="Nummer" name="Nummer" placeholder="Telefonnummer"><br><br>
+  <input id=suche type="text" id="Mail" name="Mail" placeholder="E-Mail-Adresse"><br><br><br>
+  <input id=suche type="text" id="DSBEauf" name="DSBEauf" placeholder="(falls bestellt) Datenschutzbeauftragter"><br><br><br>
+<br>
+  <input id=suche type="submit" value="Datenschutzerklärung erstellen">
+</form> 
+	
+</td>
+   <td></td>
+</tr><tr><td></td><td id="schrift" align=center valign=top width=80%><br><br>Verschlüsselte Datenübertragung (SSL/TLS-Verschlüsselung = HTTPS).<br>
+Daten werden sofort mit Ausgabe der Datenschutzerklärung dauerhaft gelöscht.<br>
+Datenverarbeitung auf Server in Europäischer Union.<br><br>
+Datenschutzerklärung wird sofort ausgegeben. Nach Ausgabe ausdrucken oder speichern.<br><br><br></td><tr><td></td></tr>
+
+</table>
+
+<!--******************************* MENUE **********************************-->
+
+<div class="menuebar" align=center>
+
+<div class="dropdown">
+    
+  <button onclick="myFunctionMenue()" class="dropbtn" id=buttonMenue> </button>
+  <button onclick="myFunctionIdea()" class="dropbtn" id=buttonIdea> </button>
+  <button onclick="myFunctionNeu()" class="dropbtn" id=buttonNew> </button>
+  
+  <div id="MenueDropdown" class="dropdown-content">
+        <a href="index.html" style="font-family: Verdana; font-size: 30px; text-decoration:none; color: black;" ><b>HOME</b></a><br><br>
+        <a href="neu.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: #FF6A00;" ><b>CARD ERSTELLEN</b></a><br><br>
+        <a href="gastro.html" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: #8A7B57;" ><b>GASTRO</b></a><br><br>
+        <a href="scannerDiary3.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: orange;" ><b>TAGEBUCH</b></a><br><br>
+        <a href="clickandmeet.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: #A927C9;" ><b>CLICK & MEET</b></a><br><br>
+        <a href="authorityentry.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: green;" ><b>GRÜNER PASS</b></a><br><br><br>_______________________<br><br><br>
+        <a href="fileGetter.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: grey;" >ENTSCHLUESSELER</a><br><br>
+        <a href="download.htm" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: black;" >Download Scanner-App</a><br><br>
+        <a href="labelcreator.php" style="font-family: Verdana; font-size: 30px;text-decoration:none;color: black;">Türschild</a><br><br>
+        <a href="anleitung.php" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: black;" >Anleitung</a><br><br>
+        <a href="datenschutzvorgenerator.htm" style="font-family: Verdana; font-size: 30px;text-decoration:none; color: black;" >Datenschutz-<br>erklärungsgenerator</a><br><br>
+        <a href="impressum.htm" style="font-family: Verdana; font-size: 30px;text-decoration:none;color: black;">Impressum</a><br><br>
+        <a href="Datenschutz.htm" style="font-family: Verdana; font-size: 30px;text-decoration:none;color: black;">Datenschutz</a><br><br>
+    </div>
+
+    <div id="IdeaDropdown" class="dropdown-content" style="font-family: Verdana; font-size: 20px; text-decoration:none; color: black;" >
+        
+        <b>Das Problem:</b><br><br>
+
+        Kann meine Oma eine App installieren?<br>
+        Soll man mit einem Klick erfahren können,
+        wo ich war?<br>
+        Habe ich noch genügend Akku?<br><br>
+
+        <b>Die Lösung:</b><br><br>
+
+        Die gute alte <i>Visitenkarte – mit QR-Code®* </i>
+        bereit für das 21. Jahrhundert.<br>
+        „Zack“ mit dem Handy gescannt.<br>
+        Speicherung auf dem Handy, keine Reise durchs Internet und 
+        kein zentraler Server.<br><br>
+
+        <b>Die Details:</b><br><br>
+
+        Ich klicke auf „NEU“, und gebe meinen
+        Vornamen, Nachnamen und meine E-Mail-Adresse ein.<br>
+        Sofort bekomme ich meine Visitenkarte.<br>
+        Meine Visitenkarte kann ich dann ausdrucken oder
+        in meiner Bildergalerie speichern.<br>
+
+        Jeder scannt jeden. Wenn ich die Visitenkarten meiner 
+        Freunde und Bekannten scanne, nehme ich den Scanner 
+        hier auf den Seiten. <br>Die Profis, also mein Wirt oder 
+        der Klamottenladen, nehmen dafür  Apps. Die 
+        sind sicherer. Und genau auf ihre Bedürfnisse zugeschnitten.<br><br>
+        
+    </div>
+    
+</div>
+
+</div>
+<!--******************************* LEGAL-BAR **********************************-->
+
+<table style="width: 100%; font-family: Verdana; font-size: 6;  margin-left: auto; margin-right: auto; left: 0; right: 0;  top:110em; text-align: center; ">
+         <tr height = 300px><td></td></tr>
+         <tr><td align=center valign=center  id=schrift style="background-color: grey; color: white">
+             
+              <br>COVICA 2020 * Bilder und Zeichnungen BEM'20 * <a href = "impressum.htm">Impressum</a> * <a href ="Datenschutz.htm">Datenschutz</a> <br><br>
+             </td>
+            
+         </tr>
+     </table> 
+</body>
